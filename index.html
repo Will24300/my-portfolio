@@ -1,158 +1,266 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/src/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
-</head>
-<body class="bg-[#121111] text-white">
-  <nav class="flex justify-between items-center py-7 px-12">
-    <div>
-      <img src="/LOGO.png" alt="logo">
-    </div>
-    <div>
-      <ul class="flex justify-center items-center gap-20 text-gray-300">
-        <li class="text-orange-500 cursor-pointer">Home</li>
-        <li>Services</l>
-        <li>About me</li>
-        <li>Contact me</li>
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body class="bg-[#121111] text-white">
+    <nav
+      class="flex justify-between items-center py-7 px-12 fixed top-0 right-0 left-0 z-50 bg-[#121111]"
+    >
+      <div>
+        <img src="/LOGO.png" alt="logo" />
+      </div>
+
+      <ul class="flex justify-center items-center gap-20 p-2 text-gray-300">
+        <li><a href="#home" class="text-orange-500">Home</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </div>
-    <button class="cursor-pointer bg-orange-500 text-white py-2 px-8 rounded-lg ">Hire me</button>
-  </nav>
-  <div class="flex justify-between items-center px-15 pt-10">
-    <div class="flex flex-col gap-3">
-      <p class="text-gray-500">Hi I am</p>
-      <h1 class="text-gray-300 text-4xl">Volonte Rwicha</h1>
-      <h2 class="text-orange-500 text-6xl font-bold">Web Developer</h2>
-      <div class="flex justify-start items-center text-center gap-3 text-gray-300 my-2">
-        <div class="border border-gray-400 p-1.5 rounded-full">
-          <i class="text-xl cursor-pointer fa-brands fa-instagram"></i>
+
+      <button
+        class="cursor-pointer bg-orange-500 text-white py-2 px-8 rounded-lg"
+      >
+        Hire me
+      </button>
+    </nav>
+    <div id="home" class="flex justify-between items-center px-15 pt-30">
+      <div class="flex flex-col gap-3">
+        <p class="text-gray-500">Hi I am</p>
+        <h1 class="text-gray-300 text-4xl">Volonte Rwicha</h1>
+        <h2 class="text-orange-500 text-6xl font-bold">Web Developer</h2>
+        <div
+          class="flex justify-start items-center text-center gap-3 text-gray-300 my-2"
+        >
+          <div class="border border-gray-400 p-1.5 rounded-full">
+            <i class="text-xl cursor-pointer fa-brands fa-instagram"></i>
+          </div>
+          <div class="border border-gray-400 p-1.5 rounded-full">
+            <i class="text-xl cursor-pointer fa-brands fa-linkedin"></i>
+          </div>
+          <div class="border border-gray-400 p-1.5 rounded-full">
+            <i class="text-xl cursor-pointer fa-solid fa-envelope"></i>
+          </div>
+          <div class="border border-gray-400 p-1.5 rounded-full">
+            <i class="text-xl cursor-pointer fa-brands fa-x-twitter"></i>
+          </div>
         </div>
-        <div class="border border-gray-400 p-1.5 rounded-full">
-          <i class="text-xl cursor-pointer fa-brands fa-linkedin"></i>
+        <div class="flex gap-10 my-4">
+          <button
+            class="bg-orange-500 text-white py-1.5 px-8 cursor-pointer rounded"
+          >
+            Hire me
+          </button>
+          <button
+            class="border border-[#696969] text-[#696969] py-1.5 px-8 rounded cursor-pointer"
+          >
+            Download CV
+          </button>
         </div>
-        <div class="border border-gray-400 p-1.5 rounded-full">
-          <i class="text-xl cursor-pointer fa-solid fa-envelope"></i>
-        </div>
-        <div class="border border-gray-400 p-1.5 rounded-full">
-          <i class="text-xl cursor-pointer fa-brands fa-x-twitter"></i>
+        <div class="bg-[#272727] flex justify-between gap-5 p-3 font-semibold">
+          <div class="pr-3">
+            <span class="text-orange-500 font-bold">5+</span>
+            <h3>Experiences</h3>
+          </div>
+          <div class="border-l-1 pl-3">
+            <span class="text-orange-500 font-bold">20+</span>
+            <h3>Projects done</h3>
+          </div>
+          <div class="border-l-1 pl-3">
+            <span class="text-orange-500 font-bold">40+</span>
+            <h3>Happy Clients</h3>
+          </div>
         </div>
       </div>
-      <div class="flex gap-10 my-4">
-        <button class="bg-orange-500 text-white py-1.5 px-8 cursor-pointer rounded">Hire me</button>
-        <button class="border border-[#696969] text-[#696969] py-1.5 px-8 rounded cursor-pointer">Download CV</button>
-      </div>
-      <div class="bg-[#272727] flex justify-between gap-5 p-3 font-semibold">
-        <div class=" pr-3">
-          <span class="text-orange-500 font-bold">5+</span>
-          <h3>Experiences</h3>
-        </div>
-        <div class="border-l-1 pl-3">
-          <span class="text-orange-500 font-bold">20+</span>
-          <h3>Projects done</h3>
-        </div>
-        <div class="border-l-1 pl-3">
-          <span class="text-orange-500 font-bold">40+</span>
-          <h3>Happy Clients</h3>
-        </div>
-        
-      </div>
-    </div>
-    <div class="flex justify-center items-center relative">
-      <img src="bg.png" alt="bg" class="z-10 w-[600px] h-[700px] mt-[-400px]">
-      <div class="w-[300px] h-[300px] bg-[#302f2f] rounded-full absolute top-10"></div>
-    </div>
-  </div>
-  <section class="flex flex-col gap-5 items-center pt-50  w-[90%] mx-auto">
-    <h1 class="text-3xl font-bold">Service</h1>
-    <p class="text-[#454545] ">Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam</p>
-    <div class="grid grid-cols-3 mt-15 gap-10">
-      <div class="bg-[#1e1e1e] text-[#484848] p-5 flex flex-col justify-center items-center text-center gap-5 rounded-2xl">
-        <div class="text-orange-400 font-semibold flex flex-col gap-3">
-          <img src="/2-User.png" alt="user-icon" class="w-[70px]">
-          <h2>App Design</h2>
-        </div>
-        <p>Lorem ipsum dolor sit amet . <br>Imperdiet Lorem ipsum dolor sit amet consectetur</p>
-      </div>
-      <div class="bg-[#1e1e1e] text-[#484848] p-5 flex flex-col justify-center items-center text-center gap-5 rounded-2xl">
-        <div class="text-orange-400 font-semibold flex flex-col gap-3">
-          <img src="/2-User.png" alt="user-icon" class="w-[70px]">
-          <h2>App Design</h2>
-        </div>
-        <p>Lorem ipsum dolor sit amet . <br>Imperdiet Lorem ipsum dolor sit amet consectetur</p>
-      </div>
-      <div class="bg-[#1e1e1e] text-[#484848] p-5 flex flex-col justify-center items-center text-center gap-5 rounded-2xl">
-        <div class="text-orange-400 font-semibold flex flex-col gap-3">
-          <img src="/2-User.png" alt="user-icon" class="w-[70px]">
-          <h2>App Design</h2>
-        </div>
-        <p>Lorem ipsum dolor sit amet . <br>Imperdiet Lorem ipsum dolor sit amet consectetur</p>
-      </div>
-      <div class="bg-[#1e1e1e] text-[#484848] p-5 flex flex-col justify-center items-center text-center gap-5 rounded-2xl">
-        <div class="text-orange-400 font-semibold flex flex-col gap-3">
-          <img src="/2-User.png" alt="user-icon" class="w-[70px]">
-          <h2>App Design</h2>
-        </div>
-        <p>Lorem ipsum dolor sit amet . <br>Imperdiet Lorem ipsum dolor sit amet consectetur</p>
-      </div>
-      <div class="bg-[#1e1e1e] text-[#484848] p-5 flex flex-col justify-center items-center text-center gap-5 rounded-2xl">
-        <div class="text-orange-400 font-semibold flex flex-col gap-3">
-          <img src="/2-User.png" alt="user-icon" class="w-[70px]">
-          <h2>App Design</h2>
-        </div>
-        <p>Lorem ipsum dolor sit amet . <br>Imperdiet Lorem ipsum dolor sit amet consectetur</p>
-      </div>
-      <div class="bg-[#1e1e1e] text-[#484848] p-5 flex flex-col justify-center items-center text-center gap-5 rounded-2xl">
-        <div class="text-orange-400 font-semibold flex flex-col gap-3">
-          <img src="/2-User.png" alt="user-icon" class="w-[70px]">
-          <h2>App Design</h2>
-        </div>
-        <p>Lorem ipsum dolor sit amet . <br>Imperdiet Lorem ipsum dolor sit amet consectetur</p>
-      </div>
-    </div>
-  </section>
-  <section class="mt-50 w-[90%] mx-auto">
-    <div class="text-center">
-      <h1 class="text-3xl font-bold mb-3">About Me</h1>
-      <p class="text-[#454545]">Building user-friendly web experiences | UI/UX Enthusiast | Video Editing on the side. </p>
-    </div>
-    <div class="flex gap-5 mt-20 justify-center items-center">
       <div class="flex justify-center items-center relative">
-        <img src="bg.png" alt="bg" class="z-10 w-[640px] h-[750px] mt-[-400px]">
-        <div class="w-[300px] h-[320px] bg-[#302f2f] rounded-t-full absolute top-10"></div>
-      </div>
-      <div class="w-[50%] text-[#717171] leading-7">
-        <p class="">A software engineer, the modern-day architect of digital realms, navigates the ethereal landscapes of code, sculpting intangible structures that shape our technological world. With fingers poised over keyboards like virtuoso pianists, they compose symphonies of logic, their minds a labyrinth of algorithms and solutions.Their canvas is a screen, a vast expanse where lines of code dance in intricate patterns, weaving the fabric of programs and applications. Each keystroke is a brushstroke, crafting intricate architectures and breathing life into innovative designs.In this digital atelier, they don the mantle of problem solvers, confronting bugs and glitches like valiant knights in an ever-evolving quest for perfection. Debugging becomes a noble pursuit, unraveling the mysteries hidden within the tangled webs of code. designs.In this digital atelier.</p>
-        <button class="bg-orange-500 text-white font-semibold py-1 px-2 rounded mt-5 cursor-pointer"><i class="fa-solid fa-download"></i>Download CV</button>
+        <img
+          src="bg.png"
+          alt="bg"
+          class="z-10 w-[600px] h-[700px] mt-[-400px]"
+        />
+        <div
+          class="w-[300px] h-[300px] bg-[#302f2f] rounded-full absolute top-10"
+        ></div>
       </div>
     </div>
-  </section>
-  <section class="mt-50 mb-30">
-    <div class="text-center">
-      <h1 class="text-3xl font-bold mb-3">Contact Me</h1>
-      <p class="text-[#454545]">Cultivating Connections: Reach Out and Connect with Me</p>
-    </div>
-    <form class=" w-[60%] mx-auto mt-13 flex flex-col justify-center items-center" id="myForm" >
-      <div class="grid grid-cols-2 gap-5 w-[100%]">
-        <input type="text" placeholder="Name" class="input-box" >
-        <input type="email" placeholder="Email" class="input-box" >
-        <input type="number" placeholder="Phone Number" class="input-box " >
-        <textarea name="Project detail" class="input-box text-[#717171] row-span-3" >Project Details</textarea>
+    <section
+      id="service"
+      class="flex flex-col gap-5 items-center mt-20 pt-30 w-[90%] mx-auto"
+    >
+      <h1 class="text-3xl font-bold">Service</h1>
+      <p class="text-[#454545]">
+        Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit
+        felis ligula aliquam
+      </p>
+      <div class="grid grid-cols-3 mt-15 gap-10">
+        <div
+          class="bg-[#1e1e1e] text-[#484848] p-5 flex flex-col justify-center items-center text-center gap-5 rounded-2xl"
+        >
+          <div class="text-orange-400 font-semibold flex flex-col gap-3">
+            <img src="/2-User.png" alt="user-icon" class="w-[70px]" />
+            <h2>App Design</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet . <br />Imperdiet Lorem ipsum dolor sit
+            amet consectetur
+          </p>
+        </div>
+        <div
+          class="bg-[#1e1e1e] text-[#484848] p-5 flex flex-col justify-center items-center text-center gap-5 rounded-2xl"
+        >
+          <div class="text-orange-400 font-semibold flex flex-col gap-3">
+            <img src="/2-User.png" alt="user-icon" class="w-[70px]" />
+            <h2>App Design</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet . <br />Imperdiet Lorem ipsum dolor sit
+            amet consectetur
+          </p>
+        </div>
+        <div
+          class="bg-[#1e1e1e] text-[#484848] p-5 flex flex-col justify-center items-center text-center gap-5 rounded-2xl"
+        >
+          <div class="text-orange-400 font-semibold flex flex-col gap-3">
+            <img src="/2-User.png" alt="user-icon" class="w-[70px]" />
+            <h2>App Design</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet . <br />Imperdiet Lorem ipsum dolor sit
+            amet consectetur
+          </p>
+        </div>
+        <div
+          class="bg-[#1e1e1e] text-[#484848] p-5 flex flex-col justify-center items-center text-center gap-5 rounded-2xl"
+        >
+          <div class="text-orange-400 font-semibold flex flex-col gap-3">
+            <img src="/2-User.png" alt="user-icon" class="w-[70px]" />
+            <h2>App Design</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet . <br />Imperdiet Lorem ipsum dolor sit
+            amet consectetur
+          </p>
+        </div>
+        <div
+          class="bg-[#1e1e1e] text-[#484848] p-5 flex flex-col justify-center items-center text-center gap-5 rounded-2xl"
+        >
+          <div class="text-orange-400 font-semibold flex flex-col gap-3">
+            <img src="/2-User.png" alt="user-icon" class="w-[70px]" />
+            <h2>App Design</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet . <br />Imperdiet Lorem ipsum dolor sit
+            amet consectetur
+          </p>
+        </div>
+        <div
+          class="bg-[#1e1e1e] text-[#484848] p-5 flex flex-col justify-center items-center text-center gap-5 rounded-2xl"
+        >
+          <div class="text-orange-400 font-semibold flex flex-col gap-3">
+            <img src="/2-User.png" alt="user-icon" class="w-[70px]" />
+            <h2>App Design</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet . <br />Imperdiet Lorem ipsum dolor sit
+            amet consectetur
+          </p>
+        </div>
       </div>
-      <button type="submit" id="sub" class="mt-12 bg-orange-500 text-white font-semibold py-2 px-7 rounded cursor-pointer">Send</button>
-    </form>
-  </section>
-  <footer class="pt-10 pb-4 flex flex-col gap-5 justify-center items-center bg-[#1e1e1e] text-[#717171] font-semibold">
-    <img src="/LOGO.png" alt="">
-    <ul class="flex justify-center items-center gap-20 ">
-        <li class=" cursor-pointer">Home</li>
-        <li>Services</l>
-        <li>About me</li>
-        <li>Contact me</li>
-    </ul>
-    <div class="flex justify-start items-center text-center gap-3 text-gray-300 my-2">
+    </section>
+    <section id="about" class="mt-30 pt-30 w-[90%] mx-auto">
+      <div class="text-center">
+        <h1 class="text-3xl font-bold mb-3">About Me</h1>
+        <p class="text-[#454545]">
+          Building user-friendly web experiences | UI/UX Enthusiast | Video
+          Editing on the side.
+        </p>
+      </div>
+      <div class="flex gap-5 mt-20 justify-center items-center">
+        <div class="flex justify-center items-center relative">
+          <img
+            src="bg.png"
+            alt="bg"
+            class="z-10 w-[640px] h-[750px] mt-[-400px]"
+          />
+          <div
+            class="w-[300px] h-[320px] bg-[#302f2f] rounded-t-full absolute top-10"
+          ></div>
+        </div>
+        <div class="w-[50%] text-[#717171] leading-7">
+          <p class="">
+            A software engineer, the modern-day architect of digital realms,
+            navigates the ethereal landscapes of code, sculpting intangible
+            structures that shape our technological world. With fingers poised
+            over keyboards like virtuoso pianists, they compose symphonies of
+            logic, their minds a labyrinth of algorithms and solutions.Their
+            canvas is a screen, a vast expanse where lines of code dance in
+            intricate patterns, weaving the fabric of programs and applications.
+            Each keystroke is a brushstroke, crafting intricate architectures
+            and breathing life into innovative designs.In this digital atelier,
+            they don the mantle of problem solvers, confronting bugs and
+            glitches like valiant knights in an ever-evolving quest for
+            perfection. Debugging becomes a noble pursuit, unraveling the
+            mysteries hidden within the tangled webs of code. designs.In this
+            digital atelier.
+          </p>
+          <button
+            class="bg-orange-500 text-white font-semibold py-1 px-2 rounded mt-5 cursor-pointer"
+          >
+            <i class="fa-solid fa-download"></i>Download CV
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="mt-20 pt-30 mb-30">
+      <div class="text-center">
+        <h1 class="text-3xl font-bold mb-3">Contact Me</h1>
+        <p class="text-[#454545]">
+          Cultivating Connections: Reach Out and Connect with Me
+        </p>
+      </div>
+      <form
+        class="w-[60%] mx-auto mt-13 flex flex-col justify-center items-center"
+        id="myForm"
+      >
+        <div class="grid grid-cols-2 gap-5 w-[100%]">
+          <input type="text" placeholder="Name" class="input-box" />
+          <input type="email" placeholder="Email" class="input-box" />
+          <input type="number" placeholder="Phone Number" class="input-box" />
+          <textarea
+            name="Project detail"
+            class="input-box text-[#717171] row-span-3"
+          >
+Project Details</textarea
+          >
+        </div>
+        <button
+          type="submit"
+          id="sub"
+          class="mt-12 bg-orange-500 text-white font-semibold py-2 px-7 rounded cursor-pointer"
+        >
+          Send
+        </button>
+      </form>
+    </section>
+    <footer
+      class="pt-10 pb-4 flex flex-col gap-5 justify-center items-center bg-[#1e1e1e] text-[#717171] font-semibold"
+    >
+      <img src="/LOGO.png" alt="" />
+      <ul class="flex justify-center items-center gap-20 p-2 text-gray-300">
+        <li><a href="#home" class="text-orange-500">Home</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div
+        class="flex justify-start items-center text-center gap-5 text-gray-300 my-2"
+      >
         <div class="border border-gray-400 p-1.5 rounded-full">
           <i class="text-xl cursor-pointer fa-brands fa-instagram"></i>
         </div>
@@ -168,21 +276,23 @@
       </div>
       <div>
         <div class="flex gap-10 mb-3">
-          <div><i class="text-xl cursor-pointer fa-solid fa-envelope"></i> volonterwicha123@gmail.com </div>
+          <div>
+            <i class="text-xl cursor-pointer fa-solid fa-envelope"></i>
+            volonterwicha123@gmail.com
+          </div>
           <div><i class="fa-solid fa-phone"></i> +250 791954372</div>
         </div>
       </div>
       <div class="border-t w-[50%] mx-auto text-center pt-3 text-[13px]">
         <p>Designed by @volonte.rwicha Web Developer</p>
       </div>
-  </footer>
+    </footer>
 
-  <script>
-    const form = document.getElementById("myForm");
-    form.onsubmit = (e) => {
-      e.preventDefault();
-    }
-    
-  </script>
-</body>
+    <script>
+      const form = document.getElementById("myForm");
+      form.onsubmit = (e) => {
+        e.preventDefault();
+      };
+    </script>
+  </body>
 </html>
