@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.input-box {
+  @apply bg-[#1e1e1e] py-4 px-4 outline-none rounded resize-none;
+}
