@@ -11,12 +11,12 @@
   </head>
   <body class="bg-[#121111] text-white">
     <nav
-      class="flex justify-between items-center py-7 px-12 fixed top-0 right-0 left-0 z-50 bg-[#121111]"
+      class="flex justify-between items-center py-7 px-10 md:px-12 fixed top-0 right-0 left-0 z-50 bg-[#121111]"
     >
-      <div class="flex flex-col gap-1 cursor-pointer md:hidden">
-        <div class="h-[3px] w-7 bg-gray-300"></div>
-        <div class="h-[3px] w-5 bg-gray-300"></div>
-        <div class="h-[3px] w-7 bg-gray-300"></div>
+      <div class="flex flex-col gap-1.5 cursor-pointer md:hidden">
+        <div class="h-[3px] w-7 bg-gray-400"></div>
+        <div class="h-[3px] w-5 bg-gray-400"></div>
+        <div class="h-[3px] w-7 bg-gray-400"></div>
       </div>
       <div>
         <img src="/LOGO.png" alt="logo" class="w-18 md:w-full" />
@@ -32,18 +32,23 @@
       </ul>
 
       <button
-        class="cursor-pointer bg-orange-500 text-white py-2 px-5 md:py-2 md:px-8 rounded-lg"
+        class="cursor-pointer bg-orange-500 text-white py-1.5 px-5 md:py-2 md:px-8 rounded-lg"
       >
         Hire me
       </button>
     </nav>
-    <div id="home" class="flex justify-between items-center px-15 pt-30">
-      <div class="flex flex-col gap-3">
+    <div
+      id="home"
+      class="flex flex-col gap-15 md:gap-0 md:flex-row justify-between items-center px-4 md:px-15 pt-30"
+    >
+      <div class="flex flex-col gap-3 text-center md:text-start">
         <p class="text-gray-500">Hi I am</p>
-        <h1 class="text-gray-300 text-4xl">Volonte Rwicha</h1>
-        <h2 class="text-orange-500 text-6xl font-bold">Web Developer</h2>
+        <h1 class="text-gray-300 text-2xl md:text-4xl">Volonte Rwicha</h1>
+        <h2 class="text-orange-500 text-4xl md:text-6xl font-bold">
+          Web Developer
+        </h2>
         <div
-          class="flex justify-start items-center text-center gap-3 text-gray-300 my-2"
+          class="flex justify-center md:justify-start items-center text-center gap-3 text-gray-300 my-2"
         >
           <div class="border border-gray-400 p-1.5 rounded-full">
             <i class="text-xl cursor-pointer fa-brands fa-instagram"></i>
@@ -58,9 +63,11 @@
             <i class="text-xl cursor-pointer fa-brands fa-x-twitter"></i>
           </div>
         </div>
-        <div class="flex gap-10 my-4">
+        <div
+          class="flex justify-center md:justify-start items-center gap-5 md:gap-10 my-4"
+        >
           <button
-            class="bg-orange-500 text-white py-1.5 px-8 cursor-pointer rounded"
+            class="bg-orange-500 text-white py-2 px-7 text-sm md:text-base md:py-1.5 md:px-8 cursor-pointer rounded"
           >
             Hire me
           </button>
@@ -70,18 +77,26 @@
             Download CV
           </button>
         </div>
-        <div class="bg-[#272727] flex justify-between gap-5 p-3 font-semibold">
-          <div class="pr-3">
-            <span class="text-orange-500 font-bold">5+</span>
-            <h3>Experiences</h3>
+        <div
+          class="bg-[#272727] grid grid-cols-3 gap-2 md:gap-5 p-3 font-semibold rounded"
+        >
+          <div>
+            <span class="text-orange-500 font-semibold text-sm md:font-bold"
+              >5+</span
+            >
+            <h3 class="font-semibold text-sm md:text-base">Experiences</h3>
           </div>
           <div class="border-l-1 pl-3">
-            <span class="text-orange-500 font-bold">20+</span>
-            <h3>Projects done</h3>
+            <span class="text-orange-500 font-semibold text-sm md:font-bold"
+              >20+</span
+            >
+            <h3 class="font-semibold text-sm md:text-base">Projects done</h3>
           </div>
           <div class="border-l-1 pl-3">
-            <span class="text-orange-500 font-bold">40+</span>
-            <h3>Happy Clients</h3>
+            <span class="text-orange-500 font-semibold text-sm md:font-bold"
+              >40+</span
+            >
+            <h3 class="font-semibold text-sm md:text-base">Happy Clients</h3>
           </div>
         </div>
       </div>
@@ -89,16 +104,16 @@
         <img
           src="bg.png"
           alt="bg"
-          class="z-10 w-[600px] h-[700px] mt-[-400px]"
+          class="z-10 mt-[-300px] h-[550px] rounded-b-full md:rounded-none w-full md:w-[600px] md:h-[700px] md:mt-[-400px]"
         />
         <div
-          class="w-[300px] h-[300px] bg-[#302f2f] rounded-full absolute top-10"
+          class="w-[210px] h-[210px] md:w-[300px] md:h-[300px] bg-[#302f2f] rounded-full absolute top-10"
         ></div>
       </div>
     </div>
     <section
       id="service"
-      class="flex flex-col gap-5 items-center mt-20 pt-30 w-[90%] mx-auto"
+      class="flex flex-col gap-5 items-center mt-0 md:mt-20 pt-30 w-[90%] mx-auto"
     >
       <h1 class="text-3xl font-bold">Service</h1>
       <p class="text-[#454545]">
