@@ -240,27 +240,34 @@
         </div>
       </div>
     </section>
-    <section id="about" class="mt-30 pt-30 w-[90%] mx-auto">
+    <section id="about" class="mt-0 pt-20 md:mt-30 md:pt-30 w-[90%] mx-auto">
       <div class="text-center">
-        <h1 class="text-3xl font-bold mb-3">About Me</h1>
-        <p class="text-[#454545]">
+        <h1 class="text-2xl md:text-3xl font-bold mb-3">About Me</h1>
+        <p class="text-[#454545] hidden md:block">
           Building user-friendly web experiences | UI/UX Enthusiast | Video
           Editing on the side.
         </p>
+        <p class="text-[#454545] md:hidden">
+          Building user-friendly web experiences.
+        </p>
       </div>
-      <div class="flex gap-5 mt-20 justify-center items-center">
+      <div
+        class="flex flex-col md:flex-row gap-15 md:gap-5 mt-10 md:mt-20 justify-center items-center"
+      >
         <div class="flex justify-center items-center relative">
           <img
             src="bg.png"
             alt="bg"
-            class="z-10 w-[640px] h-[750px] mt-[-400px]"
+            class="z-10 mt-[-310px] w-[700px] h-[600px] md:w-[640px] md:h-[750px] md:mt-[-400px]"
           />
           <div
-            class="w-[300px] h-[320px] bg-[#302f2f] rounded-t-full absolute top-10"
+            class="w-[220px] h-[250px] md:w-[270px] md:h-[310px] bg-[#302f2f] rounded-t-full absolute top-10"
           ></div>
         </div>
-        <div class="w-[50%] text-[#717171] leading-7">
-          <p class="">
+        <div
+          class="w-full md:w-[50%] text-[#717171] leading-7 flex flex-col justify-center md:justify-start items-center md:items-start"
+        >
+          <p class="hidden md:block text-justify">
             A software engineer, the modern-day architect of digital realms,
             navigates the ethereal landscapes of code, sculpting intangible
             structures that shape our technological world. With fingers poised
@@ -276,8 +283,17 @@
             mysteries hidden within the tangled webs of code. designs.In this
             digital atelier.
           </p>
+          <p class="md:hidden text-justify">
+            A software engineer, the modern-day architect of digital realms,
+            navigates the ethereal landscapes of code, sculpting intangible
+            structures that shape our technological world. With fingers poised
+            over keyboards like virtuoso pianists, they compose symphonies of
+            logic, their minds a labyrinth of algorithms and solutions.Their
+            canvas is a screen, a vast expanse where lines of code dance in
+            intricate patterns, weaving the fabric of programs and applications.
+          </p>
           <button
-            class="bg-orange-500 text-white font-semibold py-1 px-2 rounded mt-5 cursor-pointer"
+            class="bg-orange-500 text-white font-semibold py-1 px-4 md:px-2 rounded mt-7 md:mt-5 cursor-pointer"
           >
             <i class="fa-solid fa-download"></i>Download CV
           </button>
