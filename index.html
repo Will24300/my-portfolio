@@ -300,27 +300,26 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="mt-20 pt-30 mb-30">
-      <div class="text-center">
-        <h1 class="text-3xl font-bold mb-3">Contact Me</h1>
+    <section id="contact" class="mt-0 pt-20 md:mt-20 md:pt-30 mb-30">
+      <div class="text-center px-5 md:px-0">
+        <h1 class="text-2xl md:text-3xl font-bold mb-3">Contact Me</h1>
         <p class="text-[#454545]">
           Cultivating Connections: Reach Out and Connect with Me
         </p>
       </div>
       <form
-        class="w-[60%] mx-auto mt-13 flex flex-col justify-center items-center"
+        class="w-[80%] md:w-[60%] mx-auto mt-13 flex flex-col justify-center items-center"
         id="myForm"
       >
-        <div class="grid grid-cols-2 gap-5 w-[100%]">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
           <input type="text" placeholder="Name" class="input-box" />
           <input type="email" placeholder="Email" class="input-box" />
           <input type="number" placeholder="Phone Number" class="input-box" />
           <textarea
             name="Project detail"
-            class="input-box text-[#717171] row-span-3"
-          >
-Project Details</textarea
-          >
+            class="input-box row-span-3"
+            placeholder="Project Details"
+          ></textarea>
         </div>
         <button
           type="submit"
@@ -335,7 +334,9 @@ Project Details</textarea
       class="pt-10 pb-4 flex flex-col gap-5 justify-center items-center bg-[#1e1e1e] text-[#717171] font-semibold"
     >
       <img src="/LOGO.png" alt="" />
-      <ul class="flex justify-center items-center gap-20 p-2 text-[#717171]">
+      <ul
+        class="flex justify-center items-center gap-5 md:gap-20 p-2 text-[#717171]"
+      >
         <li><a href="#home">Home</a></li>
         <li><a href="#service">Services</a></li>
         <li><a href="#about">About me</a></li>
@@ -358,7 +359,9 @@ Project Details</textarea
         </div>
       </div>
       <div>
-        <div class="flex gap-10 mb-3">
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-5 md:gap-10 mb-3 text-sm md:text-base"
+        >
           <div>
             <i class="text-xl cursor-pointer fa-solid fa-envelope"></i>
             volonterwicha123@gmail.com
@@ -366,7 +369,9 @@ Project Details</textarea
           <div><i class="fa-solid fa-phone"></i> +250 791954372</div>
         </div>
       </div>
-      <div class="border-t w-[50%] mx-auto text-center pt-3 text-[13px]">
+      <div
+        class="border-t w-[80%] md:w-[50%] mx-auto text-center pt-3 text-[13px]"
+      >
         <p>Designed by @volonte.rwicha Web Developer</p>
       </div>
     </footer>
