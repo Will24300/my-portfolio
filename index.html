@@ -34,7 +34,7 @@
       <button
         class="cursor-pointer bg-orange-500 text-white py-1.5 px-5 md:py-2 md:px-8 rounded-lg"
       >
-        Hire me
+        <a href="#contact">Hire me</a>
       </button>
     </nav>
     <div
@@ -69,12 +69,12 @@
           <button
             class="bg-orange-500 text-white py-2 px-7 text-sm md:text-base md:py-1.5 md:px-8 cursor-pointer rounded"
           >
-            Hire me
+            <a href="#contact">Hire me</a>
           </button>
           <button
             class="border border-[#696969] text-[#696969] py-1.5 px-8 rounded cursor-pointer"
           >
-            Download CV
+            <a href="/cv.pdf" download="my_cv.pdf"> Download CV </a>
           </button>
         </div>
         <div
@@ -295,7 +295,8 @@
           <button
             class="bg-orange-500 text-white font-semibold py-1 px-4 md:px-2 rounded mt-7 md:mt-5 cursor-pointer"
           >
-            <i class="fa-solid fa-download"></i>Download CV
+            <i class="fa-solid fa-download"></i
+            ><a href="/cv.pdf" download="my_cv.pdf"> Download CV </a>
           </button>
         </div>
       </div>
@@ -308,13 +309,25 @@
         </p>
       </div>
       <form
+        action="https://formspree.io/f/xrbyekzr"
+        method="POST"
         class="w-[80%] md:w-[60%] mx-auto mt-13 flex flex-col justify-center items-center"
         id="myForm"
       >
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
-          <input type="text" placeholder="Name" class="input-box" />
-          <input type="email" placeholder="Email" class="input-box" />
-          <input type="number" placeholder="Phone Number" class="input-box" />
+          <input type="text" name="name" placeholder="Name" class="input-box" />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            class="input-box"
+          />
+          <input
+            type="number"
+            name="number"
+            placeholder="Phone Number"
+            class="input-box"
+          />
           <textarea
             name="Project detail"
             class="input-box row-span-3"
@@ -377,10 +390,66 @@
     </footer>
 
     <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden"); // show/hide menu
+      });
       const form = document.getElementById("myForm");
-      form.onsubmit = (e) => {
-        e.preventDefault();
-      };
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault(); // stop normal form submit
+
+        const formData = new FormData(form);
+
+        // Send data to Formspree
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+          headers: { Accept: "application/json" },
+        });
+
+        if (response.ok) {
+          alert("✅ Message sent successfully!");
+          form.reset(); // clears all inputs
+        } else {
+          alert("❌ Oops! Something went wrong.");
+        }
+      });
     </script>
   </body>
 </html>
+
+<!-- 
+<nav
+  class="flex justify-between items-center py-7 px-10 md:px-12 fixed top-0 right-0 left-0 z-50 bg-[#121111]"
+>
+
+  <div id="menu-btn" class="flex flex-col gap-1.5 cursor-pointer md:hidden">
+    <div class="h-[3px] w-7 bg-gray-400"></div>
+    <div class="h-[3px] w-5 bg-gray-400"></div>
+    <div class="h-[3px] w-7 bg-gray-400"></div>
+  </div>
+
+  <div>
+    <img src="/LOGO.png" alt="logo" class="w-18 md:w-full" />
+  </div>
+
+
+  <ul
+    id="menu"
+    class="hidden flex-col gap-6 absolute top-20 left-0 w-full bg-[#121111] text-center py-6 text-gray-300 md:flex md:flex-row md:static md:gap-20 md:p-2 md:bg-transparent md:py-0"
+  >
+    <li><a href="#home" class="text-orange-500">Home</a></li>
+    <li><a href="#service">Services</a></li>
+    <li><a href="#about">About me</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <button
+    class="cursor-pointer bg-orange-500 text-white py-1.5 px-5 md:py-2 md:px-8 rounded-lg"
+  >
+    <a href="#contact">Hire me</a>
+  </button>
+</nav> -->
