@@ -13,17 +13,30 @@
     <nav
       class="flex justify-between items-center py-7 px-10 md:px-12 fixed top-0 right-0 left-0 z-50 bg-[#121111]"
     >
-      <div class="flex flex-col gap-1.5 cursor-pointer md:hidden">
+      <div
+        class="flex flex-col gap-1.5 cursor-pointer md:hidden"
+        onclick="toggleMenu()"
+      >
         <div class="h-[3px] w-7 bg-gray-400"></div>
         <div class="h-[3px] w-5 bg-gray-400"></div>
         <div class="h-[3px] w-7 bg-gray-400"></div>
       </div>
+
       <div>
         <img src="/LOGO.png" alt="logo" class="w-18 md:w-full" />
       </div>
 
       <ul
         class="hidden md:flex md:justify-center md:items-center md:gap-20 md:p-2 md:text-gray-300"
+      >
+        <li><a href="#home" class="text-orange-500">Home</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <ul
+        class="mobile-menu absolute top-full left-0 w-3/4 bg-[#121111] text-gray-300 flex flex-col gap-4 p-6 md:hidden z-50 -translate-x-full transition-transform duration-300 ease-in-out"
       >
         <li><a href="#home" class="text-orange-500">Home</a></li>
         <li><a href="#service">Services</a></li>
@@ -390,20 +403,17 @@
     </footer>
 
     <script>
-      const menuBtn = document.getElementById("menu-btn");
-      const menu = document.getElementById("menu");
-
-      menuBtn.addEventListener("click", () => {
-        menu.classList.toggle("hidden"); // show/hide menu
-      });
+      function toggleMenu() {
+        const menu = document.querySelector(".mobile-menu");
+        menu.classList.toggle("translate-x-0");
+      }
       const form = document.getElementById("myForm");
 
       form.addEventListener("submit", async function (e) {
-        e.preventDefault(); // stop normal form submit
+        e.preventDefault();
 
         const formData = new FormData(form);
 
-        // Send data to Formspree
         const response = await fetch(form.action, {
           method: form.method,
           body: formData,
@@ -412,7 +422,7 @@
 
         if (response.ok) {
           alert("✅ Message sent successfully!");
-          form.reset(); // clears all inputs
+          form.reset();
         } else {
           alert("❌ Oops! Something went wrong.");
         }
@@ -420,36 +430,3 @@
     </script>
   </body>
 </html>
-
-<!-- 
-<nav
-  class="flex justify-between items-center py-7 px-10 md:px-12 fixed top-0 right-0 left-0 z-50 bg-[#121111]"
->
-
-  <div id="menu-btn" class="flex flex-col gap-1.5 cursor-pointer md:hidden">
-    <div class="h-[3px] w-7 bg-gray-400"></div>
-    <div class="h-[3px] w-5 bg-gray-400"></div>
-    <div class="h-[3px] w-7 bg-gray-400"></div>
-  </div>
-
-  <div>
-    <img src="/LOGO.png" alt="logo" class="w-18 md:w-full" />
-  </div>
-
-
-  <ul
-    id="menu"
-    class="hidden flex-col gap-6 absolute top-20 left-0 w-full bg-[#121111] text-center py-6 text-gray-300 md:flex md:flex-row md:static md:gap-20 md:p-2 md:bg-transparent md:py-0"
-  >
-    <li><a href="#home" class="text-orange-500">Home</a></li>
-    <li><a href="#service">Services</a></li>
-    <li><a href="#about">About me</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-
-  <button
-    class="cursor-pointer bg-orange-500 text-white py-1.5 px-5 md:py-2 md:px-8 rounded-lg"
-  >
-    <a href="#contact">Hire me</a>
-  </button>
-</nav> -->
